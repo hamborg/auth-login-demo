@@ -1,0 +1,13 @@
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let festival of events">
+        <div class="card text-center">
+            <div class="card-body">
+                <h3 class="card-title">{{festival.name}}</h3>
+                <p class="card-text">{{festival.date}}</p>
+            </div>
+            <div class="card-footer">
+                Husk at købe billetter på www.{{festival.name}}.dk
+            </div>
+        </div>
+    </div>
+</div>

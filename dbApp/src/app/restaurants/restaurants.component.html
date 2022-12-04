@@ -1,0 +1,14 @@
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let restaurant of rests">
+        <div class="card text-center">
+            <div class="card-body">
+                <h3 class="card-title">{{restaurant.name}}</h3>
+                <p class="card-text">{{restaurant.date}}</p>
+                <p class="text-muted">Rating: {{restaurant.rate}}</p>
+            </div>
+            <div class="card-footer">
+                Bestil på www.{{restaurant.name}}.dk
+            </div>
+        </div>
+    </div>
+</div>
